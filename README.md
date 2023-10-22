@@ -29,7 +29,7 @@ pool.Submit(ctx, i, func(ctx context.Context, value int, err error) {
 // trigger pool stop
 cancel()
 
-// wait for all the workers to treminate gracefully
+// wait for all the workers to terminate gracefully
 pool.Join(context.Background())
 
 ```
