@@ -23,9 +23,9 @@ type Request[T comparable] struct {
 	Value T
 }
 
-// Pool worker is worker with some caching logic.
+// Pool worker is worker with logic to reduce number of calls for executor with the same params.
 // If submitted job is already processing there would be no new jobs submitted with the same parameters.
-// Job will be added to the queue of listeners and will be waiting for the results from the executor.
+// Job will be added to the queue of listeners and will be waiting for the results from the already running executor.
 type WorkerPool[T comparable, R any] struct {
 	mu                     sync.Mutex
 	listeners              map[T][]Listener[R] // Mapping of listeners for the specific arguments
