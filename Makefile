@@ -1,2 +1,2 @@
 test:
-	go test ./workerpool/... -v -race
+	go test ./... -v -race

@@ -8,7 +8,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/unixander/workerpool/workerpool"
+	"github.com/unixander/workerpool"
 )
 
 func TestWorkerPoolSuccess(t *testing.T) {

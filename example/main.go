@@ -6,7 +6,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/unixander/workerpool/workerpool"
+	"github.com/unixander/workerpool"
 )
 
 func concurrentSubmitter(ctx context.Context, pool *workerpool.WorkerPool[int, int], wg *sync.WaitGroup) {
