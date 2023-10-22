@@ -1,3 +1,4 @@
+![CI workflow](https://github.com/unixander/workerpool/actions/workflows/go.yml/badge.svg)
 # Workerpool
 
 This is an implementation of pool of workers, that does not repeat execution of executor function if the previous call has not been completed yet. When the request finishes all registered listeners will get the result of function execution.
